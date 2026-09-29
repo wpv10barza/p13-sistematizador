@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.cache/
+
+# Local/runtime
+.env
+.env.*
+!*.example
+db_config.json
+db_config.json.*
+edge_selenium_profile/
+drivers/
+data/
+inputs/
+outputs/
+*.xlsx
+*.csv
+*.tsv
+*.log
+
+# Git / IDE
+.git/
+.vscode/
+.idea/
