@@ -42,6 +42,7 @@ def rows_to_dataframe(rows: List[List[str]]) -> pd.DataFrame:
         return pd.DataFrame()
     header = rows[0]
     data = rows[1:] if len(rows) > 1 else []
+    # Asegura longitudes
     norm = []
     for r in data:
         if len(r) < len(header):
