@@ -5,18 +5,20 @@
 - project_family: `P13`
 - version: `v29` (según README del proyecto)
 - github_repository: `wpv10barza/p13-sistematizador`
-- github_branch: `import/drive-2026-09-29-v29`
+- github_branch: `main`
+- github_commit: `8f718ba20aa89f3e58d492524412fe51fb9eb229`
+- import_branch: `import/drive-2026-09-29-v29`
 - verified_source_commit: `7bce777c5d196a384dcb73184ba11beecf78b031`
 - files_expected: 14 archivos fuente principales + README/configuración segura/CI/manifest
 - files_migrated: 14 archivos fuente principales; los bytes coinciden con el snapshot de Drive salvo `config.py`, modificado de forma deliberada y documentada por seguridad/portabilidad.
 - files_excluded: `db_config.json*`, `edge_selenium_profile/`, `.git/`, `__pycache__/`, `data/`, `inputs/`, `outputs/`, archivos vacíos de argumentos CLI
 - security_changes: `config.py` sustituye dos rutas locales corporativas por variables de entorno/fallbacks locales; `db_config.json` se reemplaza por `db_config.example.json` sin secretos.
-- github_tree: `450adfb17f9eb7ad289ba824d7e4f241caf21396`
-- ci_workflow_run: `36581854319`
+- verified_tree_before_manifest_finalization: `450adfb17f9eb7ad289ba824d7e4f241caf21396`
+- ci_workflow_run_premerge_1: `36581854319` (`success`)
+- ci_workflow_run_premerge_2: `36582063214` (`success`)
 - ci_job: `syntax`
-- ci_result: `success`
-- verification_status: `CI_PASSED_PRE_MERGE`
-- verified_at: `2026-09-29T14:20:02Z`
+- verification_status: `VERIFIED_CANONICAL_MAIN`
+- verified_at: `2026-09-29T14:21:38Z`
 - deletion_allowed: `false` (la familia P13 conserva variantes históricas y archivos sensibles/no versionables en Drive)
 
 ## SHA-256 de archivos fuente en Drive
